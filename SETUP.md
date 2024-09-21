@@ -1,5 +1,7 @@
 # Course Setup
 
+- - -
+
 Complete the following steps before the first class meeting.
 
 **Note:** Some tasks may cause errors or require additional settings or configuration. This is to be expected. Google, StackOverflow, and your classmates can be helpful, as instructional staff do not have the capacity for desktop support. You may already have some of these completed from previous classes.
