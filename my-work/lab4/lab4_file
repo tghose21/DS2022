@@ -1,0 +1,9 @@
+#!/bin/bash 
+
+curl -o google_logo.png "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+
+aws s3 cp google_logo.png s3://ds2022-vwr6nd/
+
+aws s3 presign s3://ds2022-vwr6nd/google_logo.png --expires-in 604800
+
+https://ds2022-vwr6nd.s3.us-east-1.amazonaws.com/google_logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYLZZJU7V7BD2LT2G%2F20240929%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240929T205422Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fc29f2f47cf3ac0ea8a8644ff8c563659eaf4f1ba8ead6dda50e3d1f3b985c45
